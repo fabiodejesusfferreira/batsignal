@@ -1,5 +1,5 @@
-import React from 'react';
-import { View } from 'react-native';
+import React from "react";
+import { View, Text, TextInput } from "react-native";
 
 import { styles } from "./string-form-styles";
 
