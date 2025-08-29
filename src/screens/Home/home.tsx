@@ -10,7 +10,10 @@ import { PhoneForms } from "../../components/Forms/phone-form";
 
 export function Home() {
   return (
-    <View style={styles.container}>
+    <View style={currentThemeMode.container}>
+      <Pressable onPress={toggleLightThemeMode}>
+        <Image style={[currentThemeMode.batLogo, { display: displayHelpScreen ? 'flex' : 'none' }]} source={logo} />
+      </Pressable>
 
     </View>
   );
