@@ -78,6 +78,11 @@ interface ErrorMessageProps {
         setDisplayInputBorderColor(styles.inputColorForCorrectValue)
     }
   }
+
+  function handleInputFocus() {
+    
+  }
+
   return (
     <View style={formStyle.styles.container}>
       <Text style={formStyle.styles.label}>{props.label}</Text>
