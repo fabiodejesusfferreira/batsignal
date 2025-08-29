@@ -29,6 +29,18 @@ export function Home() {
     setButtonPressedStyle(currentThemeMode.helpText);
   }
 
+  function toggleLightThemeMode() {
+    if (themeMode === "light") {
+      setThemeMode("dark");
+      setThemeBarStyle("light");
+      setButtonPressedStyle(darkStyleMode.helpText);
+    } else {
+      setThemeMode("light");
+      setThemeBarStyle("dark");
+      setButtonPressedStyle(lightStyleMode.helpText);
+    }
+  }
+
   return (
     <View style={currentThemeMode.container}>
       <Pressable onPress={toggleLightThemeMode}>
