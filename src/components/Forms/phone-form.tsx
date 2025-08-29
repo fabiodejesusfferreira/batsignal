@@ -31,6 +31,23 @@ interface ErrorMessageProps {
   function handleFirstDigitOfInput() {
     if (inputValue.length == 1) setInputValue("9");
   }
+
+  function handleValueChange(newValue: string) {
+    const lastValue = newValue[newValue.length - 1];
+    if (newValue.length == 0) {
+      return setInputValue("9");
+    }
+
+    if ([".", ",", " "].includes(lastValue)) return;
+
+    if (newValue.length == 10 && !newValue.includes("-")) return;
+
+    if (newValue.includes("-") && newValue.indexOf("-") !== 5) return;
+    if (!newValue.startsWith("9")) return;
+
+    setInputValue(newValue);
+  }
+
   return (
     <View style={formStyle.styles.container}>
       <Text style={formStyle.styles.label}>{props.label}</Text>
