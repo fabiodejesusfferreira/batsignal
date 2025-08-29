@@ -25,6 +25,10 @@ export function Home() {
   
   const logo = themeMode == "light" ? batmanLogoLightmode : batmanLogoDarkmode;
 
+  function handleButtonPressedOutStyle() {
+    setButtonPressedStyle(currentThemeMode.helpText);
+  }
+
   return (
     <View style={currentThemeMode.container}>
       <Pressable onPress={toggleLightThemeMode}>
