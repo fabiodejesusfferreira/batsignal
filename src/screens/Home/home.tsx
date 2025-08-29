@@ -6,6 +6,7 @@ import batmanLogoDarkmode from "../../../assets/batman-logo-darkmode.png";
 
 import { styles } from './home-styles';
 import { lightStyleMode, darkStyleMode, formsBoxes } from "./home-styles";
+import { StringForms } from "../../components/Forms/string-form";
 
 export function Home() {
   return (
