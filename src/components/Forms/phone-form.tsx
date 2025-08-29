@@ -23,6 +23,7 @@ export function PhoneForms() {
         keyboardType="number-pad"
         maxLength={10}
       ></TextInput>
+      <ErrorMessage message="❌ Número  de telefone inválido"></ErrorMessage>
     </View>
   );
 }
