@@ -12,6 +12,7 @@ export function Home() {
   const [themeMode, setThemeMode] = useState("light");
   const currentThemeMode =
     themeMode == "light" ? lightStyleMode : darkStyleMode;
+  const [themeBarStyle, setThemeBarStyle] = useState("dark");
   return (
     <View style={currentThemeMode.container}>
       <Pressable onPress={toggleLightThemeMode}>
