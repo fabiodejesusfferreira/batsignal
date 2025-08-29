@@ -22,6 +22,10 @@ export function Home() {
         Call for help
       </Text>
 
+      <StatusBar
+        animated={true}
+        style={themeBarStyle == "light" ? "light" : "dark"}
+      />
     </View>
   );
 }
