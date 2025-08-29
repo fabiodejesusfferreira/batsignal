@@ -1,5 +1,43 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
-export const styles = StyleSheet.create({
-  container: {}
+export const lightStyleMode = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "space-evenly",
+    alignItems: "center",
+    flexDirection: "column",
+  },
+  batLogo: {
+    flexShrink: 1,
+    width: 200,
+    height: 121,
+  },
+  helpText: {
+    width: 250,
+    height: 55,
+    textAlignVertical: "center",
+    padding: 10,
+    borderRadius: 10,
+    color: "#fff",
+    fontWeight: "500",
+    boxShadow: "0px 0px 3px rgba(0, 0, 0, 1)",
+    textAlign: "center",
+    fontSize: 24,
+    backgroundColor: "#4d4d4dff",
+    marginBottom: 50,
+  },
+  helpTextPressed: {
+    width: 250,
+    height: 55,
+    textAlignVertical: "center",
+    padding: 10,
+    borderRadius: 10,
+    color: "#ff0",
+    fontWeight: "500",
+    boxShadow: "0px 0px 3px rgba(0, 0, 0, 1)",
+    textAlign: "center",
+    fontSize: 24,
+    backgroundColor: "#747474ff",
+    marginBottom: 50,
+  },
 });
