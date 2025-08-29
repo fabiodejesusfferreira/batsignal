@@ -53,6 +53,31 @@ interface ErrorMessageProps {
     return regex.test(phoneNumber);
   }
 
+  function handleEndEditing(inputText: string) {
+    let numberSplited = inputText.split("");
+    let numberTratado = [];
+    for (let index = 0; index < numberSplited.length; index++) {
+      if (index !== 5) {
+        numberTratado.push(numberSplited[index]);
+      } else if (numberSplited[index] == "-") {
+        numberTratado.push(numberSplited[index]);
+      } else {
+        numberTratado.push("-", numberSplited[index]);
+      }
+    }
+
+    setInputValue(numberTratado.join(""));
+    const verifyIfPhoneNumberIsOK = verifyPhoneNumber(numberTratado.join(""));
+
+    if (verifyIfPhoneNumberIsOK === false) {
+      handleDisplayErrorMessageForPhoneNumber();
+      setDisplayInputBorderColor(styles.inputColorForInvalidValue)
+    } else if (displayErroMessageForPhoneNumber) {
+        handleInputFocus()
+        handleDisplayErrorMessageForPhoneNumber()
+        setDisplayInputBorderColor(styles.inputColorForCorrectValue)
+    }
+  }
   return (
     <View style={formStyle.styles.container}>
       <Text style={formStyle.styles.label}>{props.label}</Text>
