@@ -1,5 +1,6 @@
-import React from 'react';
-import { View } from 'react-native';
+import React, { useState } from "react";
+import { View, Image, Text, Pressable } from "react-native";
+import { StatusBar } from "expo-status-bar";
 import batmanLogoLightmode from "../../../assets/batman-logo-lightmode.png";
 import batmanLogoDarkmode from "../../../assets/batman-logo-darkmode.png";
 
