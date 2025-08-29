@@ -23,6 +23,8 @@ export function Home() {
     setdisplayHelpScreen(false)
   }
   
+  const logo = themeMode == "light" ? batmanLogoLightmode : batmanLogoDarkmode;
+
   return (
     <View style={currentThemeMode.container}>
       <Pressable onPress={toggleLightThemeMode}>
