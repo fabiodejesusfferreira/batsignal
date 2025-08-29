@@ -23,6 +23,11 @@ interface ErrorMessageProps {
       </Text>
     );
   }
+
+  function handleDisplayErrorMessageForPhoneNumber() {
+    setDisplayErrorMessageForPhoneNumber(!displayErroMessageForPhoneNumber);
+  }
+
   function handleFirstDigitOfInput() {
     if (inputValue.length == 1) setInputValue("9");
   }
