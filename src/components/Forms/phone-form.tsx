@@ -23,6 +23,9 @@ interface ErrorMessageProps {
       </Text>
     );
   }
+  function handleFirstDigitOfInput() {
+    if (inputValue.length == 1) setInputValue("9");
+  }
   return (
     <View style={formStyle.styles.container}>
       <Text style={formStyle.styles.label}>{props.label}</Text>
