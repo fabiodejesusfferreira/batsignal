@@ -8,6 +8,21 @@ export function PhoneForms() {
 interface ErrorMessageProps {
   message: string;
 }
+
+  function ErrorMessage(props: ErrorMessageProps) {
+    return (
+      <Text
+        style={[
+          styles.errorMessage,
+          {
+            display: displayErroMessageForPhoneNumber ? "flex" : "none",
+          },
+        ]}
+      >
+        {props.message}
+      </Text>
+    );
+  }
   return (
     <View style={formStyle.styles.container}>
       <Text style={formStyle.styles.label}>{props.label}</Text>
