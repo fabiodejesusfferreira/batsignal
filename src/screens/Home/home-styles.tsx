@@ -41,3 +41,46 @@ export const lightStyleMode = StyleSheet.create({
     marginBottom: 50,
   },
 });
+
+export const darkStyleMode = StyleSheet.create({
+  container: {
+    backgroundColor: "black",
+    flex: 1,
+    justifyContent: "space-evenly",
+    alignItems: "center",
+    flexDirection: "column",
+  },
+  batLogo: {
+    flexShrink: 1,
+    width: 200,
+    height: 121,
+  },
+  helpText: {
+    width: 250,
+    height: 55,
+    textAlignVertical: "center",
+    padding: 10,
+    borderRadius: 10,
+    color: "#000",
+    fontWeight: "500",
+    textAlign: "center",
+    fontSize: 24,
+    backgroundColor: "#ffffffff",
+    marginBottom: 50,
+  },
+  helpTextPressed: {
+    width: 250,
+    height: 55,
+    textAlignVertical: "center",
+    padding: 10,
+    borderRadius: 10,
+    color: "rgba(255, 255, 202, 1)",
+    fontWeight: "500",
+    boxShadow: "0px 0px 3px rgba(0, 0, 0, 1)",
+    textAlign: "center",
+    fontSize: 24,
+    backgroundColor: "#c3c3c3ff",
+    marginBottom: 50,
+  },
+});
+
