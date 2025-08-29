@@ -48,6 +48,11 @@ interface ErrorMessageProps {
     setInputValue(newValue);
   }
 
+  function verifyPhoneNumber(phoneNumber: string) {
+    const regex = /^9\d{4}-\d{4}$/;
+    return regex.test(phoneNumber);
+  }
+
   return (
     <View style={formStyle.styles.container}>
       <Text style={formStyle.styles.label}>{props.label}</Text>
