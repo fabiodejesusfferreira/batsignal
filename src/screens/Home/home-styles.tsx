@@ -84,3 +84,13 @@ export const darkStyleMode = StyleSheet.create({
   },
 });
 
+export const formsBoxes = StyleSheet.create({
+  formContainer: {
+    gap: 30,
+    flex: 1,
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    width: "100%",
+  },
+});
