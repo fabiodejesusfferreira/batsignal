@@ -18,6 +18,11 @@ export function Home() {
   );
   const [displayHelpScreen, setdisplayHelpScreen] = useState(false)
 
+  function handleButtonPressedInStyle() {
+    setButtonPressedStyle(currentThemeMode.helpTextPressed);
+    setdisplayHelpScreen(false)
+  }
+  
   return (
     <View style={currentThemeMode.container}>
       <Pressable onPress={toggleLightThemeMode}>
