@@ -9,6 +9,8 @@ interface ErrorMessageProps {
   message: string;
 }
 
+export function PhoneForms(props: PhoneFormsProps) {
+  const [inputValue, setInputValue] = useState("");
   function ErrorMessage(props: ErrorMessageProps) {
     return (
       <Text
