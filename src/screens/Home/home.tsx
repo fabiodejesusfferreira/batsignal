@@ -10,6 +10,8 @@ import { PhoneForms } from "../../components/Forms/phone-form";
 
 export function Home() {
   const [themeMode, setThemeMode] = useState("light");
+  const currentThemeMode =
+    themeMode == "light" ? lightStyleMode : darkStyleMode;
   return (
     <View style={currentThemeMode.container}>
       <Pressable onPress={toggleLightThemeMode}>
