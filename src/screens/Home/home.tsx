@@ -14,6 +14,13 @@ export function Home() {
       <Pressable onPress={toggleLightThemeMode}>
         <Image style={[currentThemeMode.batLogo, { display: displayHelpScreen ? 'flex' : 'none' }]} source={logo} />
       </Pressable>
+      <Text
+        onPress={handleButtonPressedInStyle}
+        onPressOut={handleButtonPressedOutStyle}
+        style={[buttonPressedStyle, { display: displayHelpScreen ? 'flex' : 'none' }]}
+      >
+        Call for help
+      </Text>
 
     </View>
   );
