@@ -5,6 +5,9 @@ import * as formStyle from "./string-form-styles";
 import { styles } from "./phone-form-styles";
 
 export function PhoneForms() {
+interface ErrorMessageProps {
+  message: string;
+}
   return (
     <View style={formStyle.styles.container}>
       <Text style={formStyle.styles.label}>{props.label}</Text>
