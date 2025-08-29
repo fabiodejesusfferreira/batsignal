@@ -15,6 +15,8 @@ export function PhoneForms(props: PhoneFormsProps) {
     displayErroMessageForPhoneNumber,
     setDisplayErrorMessageForPhoneNumber,
   ] = useState(false);
+  const [displayInputBorderColor, setDisplayInputBorderColor] = useState(styles.inputColorForCorrectValue)
+
   function ErrorMessage(props: ErrorMessageProps) {
     return (
       <Text
