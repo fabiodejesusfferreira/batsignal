@@ -26,6 +26,10 @@ export function Home() {
         animated={true}
         style={themeBarStyle == "light" ? "light" : "dark"}
       />
+      <View style={[formsBoxes.formContainer, { display: !displayHelpScreen ? 'flex' : 'none' }]}>
+        <StringForms label="Nome do cidadão:" customplaceholder="Digite seu nome completo" autocomplete="name"/>
+        <PhoneForms label="Número de celular:" customplaceholder="9xxxx-xxxx" autocomplete="tel"></PhoneForms>
+      </View>
     </View>
   );
 }
